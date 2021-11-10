@@ -1,5 +1,3 @@
 tasks:
   - name: Example of passing an environment variable to a command
-    env:
-      PRINT_ME: "Hello World!"
-    command: env
+    command: bash init.sh
