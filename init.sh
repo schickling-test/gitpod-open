@@ -14,7 +14,7 @@ else
 	STRIP=$(($STRIP + 2))
 
 	# clean cwd
-	rm -rf * .*
+	rm -rf .gitpod.yml init.sh README.md .git
 
 	curl https://codeload.github.com/$GH_OWNER/$GH_REPO/tar.gz/$BRANCH | \
 		tar -xz --strip=$STRIP $GH_REPO-$BRANCH/$SUBDIR
