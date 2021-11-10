@@ -13,10 +13,9 @@ else
 	# add +1 for repo-folder and add +1 for last dir
 	STRIP=$(($STRIP + 2))
 
-	echo $STRIP
+	# clean cwd
+	rm -rf * .*
 
 	curl https://codeload.github.com/$GH_OWNER/$GH_REPO/tar.gz/$BRANCH | \
 		tar -xz --strip=$STRIP $GH_REPO-$BRANCH/$SUBDIR
-
-	ls $SUBDIR
 fi
