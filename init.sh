@@ -19,7 +19,7 @@ else
 	curl https://codeload.github.com/$GH_OWNER/$GH_REPO/tar.gz/$BRANCH | \
 		tar -xz --strip=$STRIP $GH_REPO-$BRANCH/$SUBDIR
 
-	COMMAND="${GH_command:-ls}"
+	COMMAND="${GH_COMMAND:-ls}"
 
 	eval $COMMAND
 fi
