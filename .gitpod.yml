@@ -1,0 +1,3 @@
+tasks:
+  - name: Example of passing an environment variable to a command
+    command: env
